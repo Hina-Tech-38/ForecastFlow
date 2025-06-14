@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Forecast Web App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to right bottom, #dbeafe, #f0f9ff);
+      color: #111827;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    header {
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1e3a8a;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #1e40af;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .background-shape {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle at center, #3b82f6, transparent);
+      filter: blur(150px);
+      opacity: 0.4;
+      z-index: 0;
+    }
+
+    .background-shape.one {
+      top: -100px;
+      left: -100px;
+    }
+
+    .background-shape.two {
+      bottom: -100px;
+      right: -100px;
+    }
+
+    .hero {
+      flex: 1;
+      padding: 4rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card {
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      padding: 3rem;
+      max-width: 600px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #1e3a8a;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #334155;
+    }
+
+    .cta-btn {
+      background: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+      transition: all 0.3s ease, transform 0.2s ease;
+    }
+
+    .cta-btn:hover {
+      background: #2563eb;
+      box-shadow: 0 0 20px rgba(37, 99, 235, 0.6);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.2);
+      padding: 1rem 2rem;
+      text-align: center;
+      color: #475569;
+      font-size: 0.9rem;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-shape one"></div>
+  <div class="background-shape two"></div>
+
+  <header>
+    <div class="logo">ForecastFlow</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#features">Features</a>
+      <a href="#upload">Upload</a>
+      <a href="#dashboard">Dashboard</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Predict Sales Smarter</h1>
+      <p>Your all-in-one web solution for effortless sales forecasting and real-time trend analysis.</p>
+      <a href="/main" class="cta-btn">Get Started</a>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ForecastFlow. All rights reserved.
+  </footer>
+</body>
+</html>
