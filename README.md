@@ -4,3 +4,4 @@ ForecastFlow is an intelligent sales forecasting solution that leverages machine
 >  ![Dashboard Screenshot](./forecast_landing_page.png)
 >  ![Dashboard Screenshot](./upload_page.png)
 >  ![Dashboard Screenshot](./eg_graph.png)
+>  ![Dashboard Screenshot](./eg_graph.png)
